@@ -47,7 +47,7 @@ public class DeleteSessionClass {
             String confirm = scanner.nextLine();
 
             if (!confirm.equalsIgnoreCase("y")) {
-                System.out.println("❌ Deletion cancelled.");
+                System.out.println("Deletion cancelled!!");
                 return;
             }
 
