@@ -1,0 +1,6 @@
+session_id,user_id,session_name,words_studied,time_spent_hours,confidence_level,mastered,good,bad
+1,1,Session 1,100,20,87,60,30,10
+2,1,Session 2,200,45,63,120,60,20
+3,1,Session 3,250,32,56,140,80,30
+4,1,Session 4,50,10,100,50,0,0
+5,1,Session 5,125,12,25,30,40,55
