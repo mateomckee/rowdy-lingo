@@ -27,6 +27,5 @@ public class Login {
             System.out.println("ERROR: File was not Found");
         }
 
-        return id;
     }
 }

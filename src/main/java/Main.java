@@ -5,4 +5,3 @@ public class Main {
         //Call to the login screen as its the first thing the program needs to do
         LoginScreen.showLogin();
     }
-}
