@@ -16,7 +16,6 @@ public abstract class User {
         this.email = email;
         this.password = password;
         this.totalStudyTimeMinutes = totalStudyTimeMinutes;
-        this.wordsLearned = wordsLearned;
     }
 
     public void setUserID(int newUserID) {

@@ -17,7 +17,6 @@ public class Login {
                 String usernameAttempt = data[1].trim();
                 String userPasswordAttempt = data[3].trim();
 
-                if (username.equals(usernameAttempt) && userPassword.equals(userPasswordAttempt)) {
                     id = Integer.parseInt(data[0].trim());
                 }
             }
