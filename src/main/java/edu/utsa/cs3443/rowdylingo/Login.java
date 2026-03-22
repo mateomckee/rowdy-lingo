@@ -3,7 +3,6 @@ import java.io.*;
 import java.util.*;
 
 public class Login {
-
     public static int AttemptLogin(String username, String userPassword, String usersFile) {
 
         int id = 0;

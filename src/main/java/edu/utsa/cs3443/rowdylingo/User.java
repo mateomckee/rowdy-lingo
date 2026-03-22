@@ -11,7 +11,6 @@ public abstract class User {
 
     public User(int userID, String username, String email, String password,
                 int totalStudyTimeMinutes, int wordsLearned, int sessionsCompleted) {
-        this.userID = userID;
         this.username = username;
         this.email = email;
         this.password = password;
