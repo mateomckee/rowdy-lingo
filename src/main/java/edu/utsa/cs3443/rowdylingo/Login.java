@@ -14,15 +14,17 @@ public class Login {
             while ((line = bReader.readLine()) != null) {
                 String[] date = line.split(",");
                 String usernameAttempt = data[1].trim();
+                String userPasswordAttempt = data[3].trim();
 
+                if (username.equals(usernameAttempt) && userPassword.equals(userPasswordAttempt)) {
                     id = Integer.parseInt(data[0].trim());
+                }
             }
             bReader.close();
         }
         catch (Exception e) {
             System.out.println("ERROR: File was not Found");
         }
-
-        return id;
+    return id;
     }
 }
