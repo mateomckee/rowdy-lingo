@@ -14,10 +14,8 @@ public class Login {
             while ((line = bReader.readLine()) != null) {
                 String[] date = line.split(",");
                 String usernameAttempt = data[1].trim();
-                String userPasswordAttempt = data[3].trim();
 
                     id = Integer.parseInt(data[0].trim());
-                }
             }
             bReader.close();
         }
@@ -25,5 +23,6 @@ public class Login {
             System.out.println("ERROR: File was not Found");
         }
 
+        return id;
     }
 }
