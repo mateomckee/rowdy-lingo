@@ -39,8 +39,8 @@ public class AddSessionClass {
 
             FileWriter fw = new FileWriter("src/main/resources/edu/utsa/cs3443/rowdylingo/data/sessions.csv", true);
 
-            fw.write("\n" + newId + "," + userId + "," + name + "," + words + "," +
-                    time + "," + confidence + "," + mastered + "," + good + "," + bad);
+            fw.write(newId + "," + userId + "," + name + "," + words + "," +
+                    time + "," + confidence + "," + mastered + "," + good + "," + bad + "\n");
 
             fw.close();
 
