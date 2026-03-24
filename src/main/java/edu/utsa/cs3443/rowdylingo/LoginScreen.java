@@ -10,15 +10,16 @@ public class LoginScreen extends Screen{
     @Override
     public Screen show() {
         printHeader();
+
         System.out.print("Username: ");
         String username = scanner.nextLine();
+
         System.out.print("Password: ");
         String password = scanner.nextLine();
 
         int userID = Login.AttemptLogin(username, password, "src/main/resources/edu/utsa/cs3443/rowdylingo/data/users.csv");
 
-
-        if (userID ==0){
+        if (userID <= 0){
             System.out.println("Invalid, try again.");
             return this;
         }

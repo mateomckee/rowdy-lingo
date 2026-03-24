@@ -3,17 +3,23 @@ package edu.utsa.cs3443.rowdylingo;
 import java.io.*;
 import java.util.*;
 
-public class DeleteSessionClass {
+public class DeleteSessionScreen extends Screen {
+    private int userID;
 
-    public static void deleteSession(int userId) {
-        Scanner scanner = new Scanner(System.in);
+    public DeleteSessionScreen(Scanner scanner, int userID) {
+        super(scanner, "Delete session");
+        this.userID = userID;
+    }
+
+    @Override
+    public Screen show() {
+        printHeader();
+
         List<String> updatedLines = new ArrayList<>();
 
         try {
             BufferedReader br = new BufferedReader(new FileReader("src/main/resources/edu/utsa/cs3443/rowdylingo/data/sessions.csv"));
             String line;
-
-            System.out.println("\n--- Your Sessions ---");
 
             // Show sessions
             while ((line = br.readLine()) != null) {
@@ -26,7 +32,7 @@ public class DeleteSessionClass {
 
                 int sessionUserId = Integer.parseInt(parts[1]);
 
-                if (sessionUserId == userId) {
+                if (sessionUserId == userID) {
                     System.out.println("ID: " + parts[0] +
                             " | Name: " + parts[2] +
                             " | Words: " + parts[3] +
@@ -41,31 +47,22 @@ public class DeleteSessionClass {
 
             // Ask for ID to delete
             System.out.print("\nEnter session ID to delete: ");
-            int deleteId = Integer.parseInt(scanner.nextLine());
+            int deleteID = Integer.parseInt(scanner.nextLine());
 
             System.out.print("Are you sure? (y/n): ");
             String confirm = scanner.nextLine();
 
             if (!confirm.equalsIgnoreCase("y")) {
                 System.out.println("Deletion cancelled!!");
-                return;
+                return new MainMenuScreen(scanner, userID);
             }
 
-            // Rewrite file without selected session
-            FileWriter fw = new FileWriter("src/main/resources/edu/utsa/cs3443/rowdylingo/data/sessions.csv");
-
-            for (String l : updatedLines) {
-                if (!l.startsWith(deleteId + ",")) {
-                    fw.write(l + "\n");
-                }
-            }
-
-            fw.close();
-
-            System.out.println("Session deleted!!");
+            UserManager.deleteSession(deleteID, updatedLines);
 
         } catch (IOException e) {
             System.out.println("Error handling file.");
         }
+
+        return new MainMenuScreen(scanner, userID);
     }
 }

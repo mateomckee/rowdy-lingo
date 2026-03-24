@@ -18,20 +18,18 @@ public class MainMenuScreen extends Screen{
         System.out.println("2. Delete session");
         System.out.println("3. Quiz");
         System.out.println("4. Logout");
-        System.out.println("Choice: ");
+        System.out.print("Choice: ");
         String choice = scanner.nextLine();
 
         switch(choice) {
             case "1":
-                AddSessionClass.addSession(userID);
-                return this;
+                return new AddSessionScreen(scanner, userID);
             case "2":
-                DeleteSessionClass.deleteSession(userID);
-                return this;
+                return new DeleteSessionScreen(scanner, userID);
             case "3":
                 return new QuizScreen(scanner, userID);
             case "4":
-                return new LoginScreen(scanner);
+                return new LandingPageScreen(scanner);
             default:
                 System.out.println("Invalid choice, try again.");
                 return this;

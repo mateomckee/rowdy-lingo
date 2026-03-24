@@ -3,4 +3,8 @@ user_id,username,email,password,total_study_time_minutes,words_learned,sessions_
 2,langLearner21,user21@email.com,learn456,180,90,3
 3,polyglotAmy,amy@email.com,poly789,600,300,8
 4,spanishStarter,john@email.com,span321,120,60,2
-5,japaneseFan,sara@email.com,japan654,400,200,6
+5,japaneseFan,sara@email.com,japan654,400,200,66
+6,mateo,mateomckee64@gmail.com,pass123!,0,0,0
+7,mateo,m@gmail.com,pass123,0,0,0
+8,mateo2,k@gmail.com,mateo2,0,0,0
+9,hi,hi,hi,0,0,0
