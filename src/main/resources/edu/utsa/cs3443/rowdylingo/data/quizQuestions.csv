@@ -1,0 +1,9 @@
+question_id,language,question_text,option_a,option_b,option_c,option_d,correct_answer
+1,Spanish,What is "hello" in Spanish?,Hola,Adios,Gracias,Por favor,A
+2,Spanish,What is "thank you" in Spanish?,Hola,Gracias,Perdon,Si,B
+3,Japanese,What is "water" in Japanese?,Mizu,Sora,Hi,Kaze,A
+4,Japanese,What is "good morning" in Japanese?,Konbanwa,Ohayo,Konnichiwa,Sayonara,B
+5,French,What is "apple" in French?,Banane,Pomme,Orange,Raisin,B
+6,German,What is "yes" in German?,Nein,Ja,Danke,Bitte,B
+7,Korean,What is "hello" in Korean?,Annyeonghaseyo,Kamsahamnida,Saranghae,Jalga,A
+8,Chinese,What is "thank you" in Chinese?,Ni hao,Xie xie,Zai jian,Qing,B
