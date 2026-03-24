@@ -12,7 +12,7 @@ public class Login {
             String line = "";
 
             while ((line = bReader.readLine()) != null) {
-                String[] date = line.split(",");
+                String[] data = line.split(",");
                 String usernameAttempt = data[1].trim();
                 String userPasswordAttempt = data[3].trim();
 

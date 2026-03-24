@@ -5,7 +5,7 @@ package edu.utsa.cs3443.rowdylingo;
 
 import java.util.Scanner;
 
-public class testerMain {
+public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
