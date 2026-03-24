@@ -6,6 +6,9 @@ import java.nio.file.Paths;
 import java.util.*;
 import java.util.stream.Stream;
 
+/**
+ * Class for account creation logic. AttemptRegister() creates an account,getNextUserID() gets the next highest userID possible from users.csv
+ */
 public class Register {
     public static int AttemptRegister(String username, String email, String password, String usersFile) {
         int id = 0;

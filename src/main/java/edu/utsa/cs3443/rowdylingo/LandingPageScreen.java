@@ -2,6 +2,9 @@ package edu.utsa.cs3443.rowdylingo;
 
 import java.util.Scanner;
 
+/**
+ * Starting screen of application, allows the users to login, create an account, or exit.
+ */
 public class LandingPageScreen extends Screen {
 
     public LandingPageScreen(Scanner scanner){
